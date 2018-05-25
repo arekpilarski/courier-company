@@ -1,0 +1,17 @@
+package pl.kurs;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@Path("/test/addresses")
+@Produces("text/html")
+public class SenderREST {
+
+	@GET
+	public String test() {
+		return "HELLO";
+	}
+}
